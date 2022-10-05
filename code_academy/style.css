@@ -219,6 +219,18 @@
     padding: 11px 16px;
     text-transform: uppercase;
 }
+/* fifth part */
+.fifth_part{
+    padding: 43px 0;
+    background-color: var(--lightblue);
+    text-align: center;
+}
+.fifth_text{
+    text-align: center;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 500;
+}
 @media screen and (min-width:1024px){
     .padding_rl{
         padding: 55px 104px;
@@ -237,6 +249,22 @@
         width: 225px;
         margin: 0 40px;
     }
+    .fifth_text{
+        width: 470px;
+    }
+    .fifth_text h2{
+        font-size: 73px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .fifth_text h4{
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .fifth_text p[
+        font-size: 18px;
+    ]
 
 }
 
@@ -272,6 +300,24 @@
     }
     .third_part .third_img2{
         margin-left: -230px;
+    }
+
+    .fifth_text{
+        width: 423px;
+    }
+    .fifth_text h2{
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .fifth_text h4{
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .fifth_text p{
+        font-size: 18px;
+    
     }
 
 
@@ -316,5 +362,23 @@
     .fourth_part .fourth_box{
         width: 100%;
     }
+    .fifth_text{
+        width: 280px;
+    }
+    .fifth_text h2{
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .fifth_text h4{
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .fifth_text p{
+        font-size: 18px;
+    
+    }
+    
 
 }
