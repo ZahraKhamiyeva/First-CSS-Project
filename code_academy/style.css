@@ -153,8 +153,14 @@
     padding: 20px 50px;
     font-size: 14px;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 10px;
     display: inline-block;
+}
+.special_a:hover{
+    border: 1px solid var(--blue);
+    background-color: #fff;
+    color: var(--blue);
+    transition: 1s;
 }
 .third_part .third_a1{
     border: 2px solid var(--blue);
@@ -231,11 +237,161 @@
     font-style: normal;
     font-weight: 500;
 }
+
+/* sixth part */
+.sixth_part{
+    width: 100%;
+    padding-bottom: 40px;
+
+}
+.sixth_flexbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sixth_part img{
+    margin: 30px 0;
+}
+
+/* seventh part */
+.seventh_part{
+    width: 100%;
+    background-color: var(--lightblue);
+    padding-bottom: 44px;
+}
+.special_h2{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    margin: 38px 0;
+
+}
+.seventh_text p:first-child{
+    font-weight: 500;
+    font-size: 14px;
+    font-weight: 500;
+}
+.seventh_text p:not(:first-child){
+    font-size: 24px;
+    width: 260px;
+    font-weight: 600;
+    margin: 6px 0;
+}
+.seventh_flexbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: relative;
+}
+/* .seventh_img img{
+    -webkit-filter: 
+     filter: blur(5px);
+}
+.seventh_img::after {
+    content: "";
+    width: 374px;
+    height: 395px;
+    background: linear-gradient(293.97deg, #FFFFFF -9.96%, rgba(255, 255, 255, 0) 111.88%);
+    display: absolute;
+    z-index: 2;
+} */
+
+
+/* eighth_part */
+.eighth_part{
+    width: 100%;
+}
+.eighth_img{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    
+    position: relative;
+    z-index: 0;
+}
+.ovarlay{
+    width: 102px;
+    position: absolute;
+    top: 45%;
+    left: auto;
+    z-index: 10;
+    opacity: 1;
+}
+
+/* ninth_part */
+.ninth_part{
+    width: 100%;
+    background-color: var(--ligtherb);
+    padding-top: 30px!important;
+    padding-bottom: 30px;
+}
+
+/* tenth part */
+.tenth_part{
+    width: 100%;
+    padding-bottom: 90px;
+    text-align: center;
+}
+.tenth_part p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    margin-bottom: 30px;
+}
+.tenth_input{
+    margin: 0 auto;
+    text-align: center;
+}
+.tenth_part .tenth_input input{
+    height: 50px;
+    border-radius: 37px;
+
+}
+.tenth_input input:first-child{
+    width: 400px;
+    margin-right: 15px;
+    border: 2px solid var(--blue);
+    margin-bottom: 20px;
+}
+.tenth_input input:not(:first-child){
+    width: 178px;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+/* footer */
+.footer{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_first_part div, .footer_second_part div{
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer_first_part div p:last-child{
+    opacity: 0.6;
+}
+.footer_second_part .second_2 p{
+    opacity: 0.8;
+}
+
+
 @media screen and (min-width:1024px){
     .padding_rl{
         padding: 55px 104px;
     }
-     .main_part .nav_burger_menu{
+    .nav_burger_menu{
         display: none;
      }
      .main_part_text{
@@ -262,9 +418,37 @@
         font-style: normal;
         font-weight: 500;
     }
-    .fifth_text p[
+    .fifth_text p{
         font-size: 18px;
-    ]
+    }
+
+    .ninth_part .questions{
+        width: 530px;
+        margin: 0 auto;
+    }
+    .questions p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 18px;
+
+    }
+    .questions .plus_icon{
+        color: var(--blue);
+        margin-right: 8px;
+        font-weight: bold;
+
+    }
+    .footer_first_part, .footer_second_part{
+        display: flex;
+        width: 500px;
+        justify-content: space-between;
+    }
+    .footer_arrow{
+        display: none;
+    }
+
+
 
 }
 
@@ -274,10 +458,13 @@
     .padding_rl{
         padding: 35px 50px;
     }
-     .main_part .navbar_menu{
+    .special_h2{
+        font-size: 36px;
+    }
+    .navbar_menu{
         display: none;
      }
-     .main_part .nav_burger_menu{
+     .nav_burger_menu{
         display: block;
      }
      .main_part_text{
@@ -320,6 +507,38 @@
     
     }
 
+    .seventh_flexbox .seventh_box:first-child{
+        display: none;
+    }
+    .seventh_flexbox{
+        justify-content: center;
+    }
+
+    .eighth_cmptr{
+        width: 100%;
+    }
+    .ninth_part .questions{
+        width: 530px;
+        margin: 0 auto;
+    }
+    .questions p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 18px;
+
+    }
+    .questions .plus_icon{
+        color: var(--blue);
+        margin-right: 8px;
+        font-weight: bold;
+
+    }
+    .footer_first_part, .footer_second_part{
+        flex-direction: column;
+    }
+
+
 
 }
 
@@ -328,10 +547,13 @@
     .padding_rl{
         padding: 25px 20px;
     }
-    .main_part .navbar_menu{
+    .special_h2{
+        font-size: 20px;
+    }
+     .navbar_menu{
         display: none;
      }
-     .main_part .nav_burger_menu{
+     .nav_burger_menu{
         display: block;
      }
      .main_part_text{
@@ -379,6 +601,42 @@
         font-size: 18px;
     
     }
+    .sixth_part img{
+        width: 160px;
+    }
+    .seventh_flexbox .seventh_box:first-child{
+        display: none;
+    }
+    .seventh_flexbox{
+        display: block;
+    }
+    .seventh_img img{
+        width: 100%;
+    }
+    .eighth_cmptr{
+        width: 100%;
+    }
+    .ovarlay{
+        width: 54px;
+    }
+    .ninth_part .questions{
+        width: 100%;
+
+    }
+    .questions p{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 18px;
+
+    }
+    .questions .plus_icon{
+        color: var(--blue);
+        margin-right: 8px;
+        font-weight: bold;
+
+    }
+
     
 
 }
