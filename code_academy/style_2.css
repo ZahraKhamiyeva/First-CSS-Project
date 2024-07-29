@@ -1,0 +1,21 @@
+.second_first{
+    display: flex;
+}
+.second_sec_flex{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,370px);
+    grid-template-rows: repeat(3,371px);
+    justify-content: space-between;
+    column-gap: 240px;
+    
+}
+
+@media screen and (min-width:1024px){
+    .second_first .sec_text{
+        margin-left: 43px;
+    }
+    .padding_rl{
+        padding:25px 104px;
+    }
+}
